@@ -1,0 +1,54 @@
+/* write a program to enter two 2/2 metrix and print multiplication & it. */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i,j,a1[2][2],a2[2][2],a3[2][2];
+	clrscr();
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("\n Enter Values a1[%d][%d]",i,j);
+			scanf("%d",&a1[i][j]);
+		}
+	}
+	for(i=0;i<3;i++)
+	{
+	      for(j=0;j<3;j++)
+	      {
+			printf("\n Enter Values a2[%d][%d]",i,j);
+			scanf("%d",&a2[i][j]);
+	      }
+	}
+	for(i=0;i<3;i++)
+	{
+		 for(j=0;j<3;j++)
+		 {
+			printf("%d\t",a1[i][j]);
+		 } printf("\n");
+	} printf("\n");
+	for(i=0;i<3;i++)
+	{
+		 for(j=0;j<3;j++)
+		 {
+			printf("%d\t",a2[i][j]);
+		 } printf("\n");
+	}
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			a3[i][j]=a1[i][j]*a2[i][j];
+		}printf("\n");
+	}
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("%d\t",a3[i][j]);
+		}  printf("\n");
+	}
+	getch();
+}
+
